@@ -57,5 +57,5 @@ console.log(languages.split(","));
 
 
 // 11- If we need to Repeat the String, so we use (repeat()) function
-let fruit = "Orange is good ";
+let fruit = "Orange";
 console.log(fruit.repeat(3));
