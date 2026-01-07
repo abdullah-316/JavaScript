@@ -11,6 +11,7 @@ phone = phone.toString();
 // 1.1 If we need to check the type of variable so we use (typeof) Method
 console.log(typeof phone);
 
+// Testing
 // let x = 10;
 // let y = x.toString();
 // x += 5;
@@ -21,29 +22,29 @@ console.log(typeof phone);
 
 
 // 2- If we show the digits after decimal(points) value so we use (toFixed(fractionDigits))
-// let PI = 3.1459;
-// PI = PI.toFixed(2) 
-// console.log(PI);
-// console.log(typeof PI);
+let PI = 3.1459;
+PI = PI.toFixed(2) 
+console.log(PI);
+console.log(typeof PI);
 // NOTE: it gaves you return Type of String, and also make your value RoundOFF
 
 // 3- When we need to get the specific value(Digit) so we use toPrecision()
-// let value = 123.456;
-// value = value.toPrecision(4);
-// console.log(value);
+let value = 123.456;
+value = value.toPrecision(4);
+console.log(value);
 // NOTE: it gaves you return Type of String
 
 // 4- For the readabiltiy of the large Numbers(for Currency usage) we use toLocaleString()
-// let income = 1000000;
-// income = income.toLocaleString("en-PK");
-// console.log(income);
+let income = 1000000;
+income = income.toLocaleString("en-PK");
+console.log(income);
 // NOTE: it gaves you return Type of String
 
 
 // 5- Parsing Convert String into Numbers
 // A- If we need to convert String into Integer and remove decimals so we use parseInt()
-// console.log(parseInt("10.99"));
-// console.log(parseInt("20px"));
+console.log(parseInt("10.99"));
+console.log(parseInt("20px"));
 
 // B- To convert String into Decimal numbers so we use parseInt()
 console.log(parseFloat("10.99"));
