@@ -7,7 +7,9 @@ const balance = new Number(200)
 // 1- If we need to converts Number into string so we use (toString())
 let phone = 300;
 phone = phone.toString();
-// console.log(typeof phone);
+
+// 1.1 If we need to check the type of variable so we use (typeof) Method
+console.log(typeof phone);
 
 // let x = 10;
 // let y = x.toString();
@@ -44,8 +46,8 @@ phone = phone.toString();
 // console.log(parseInt("20px"));
 
 // B- To convert String into Decimal numbers so we use parseInt()
-// console.log(parseFloat("10.99"));
-// console.log(parseFloat("3.14abc"));
+console.log(parseFloat("10.99"));
+console.log(parseFloat("3.14abc"));
 
 
 
