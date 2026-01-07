@@ -56,9 +56,6 @@ let languages = "JavaScript, Python, Java";
 console.log(languages.split(","));
 
 
-// // Replace and Repeat String:
-// let msg = "cityLahore";
-// console.log(msg.replace("Lahore", "Karachi"));
-
-// let fruit = "Orange ";
-// console.log(fruit.repeat(3));
+// 11- If we need to Repeat the String, so we use (repeat()) function
+let fruit = "Orange is good ";
+console.log(fruit.repeat(3));
