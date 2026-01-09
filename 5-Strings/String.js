@@ -62,7 +62,7 @@ console.log(fruit.repeat(3));
 
 
 
-
+// PRACTICE QUESTIONS:
 // Qs3. Write a JavaScript program to check whether a string is blank or not.
 let string = "abc";
 if (string == "") {
@@ -83,7 +83,6 @@ if(strName[index] == strName[index].toLowerCase()){
 else{
     console.log("Not a lowerCase");
 }
-
 
 
 // Qs5. Write a JavaScript program to strip leading and trailing spaces from a string
