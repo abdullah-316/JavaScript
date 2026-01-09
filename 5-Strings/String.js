@@ -59,3 +59,34 @@ console.log(languages.split(","));
 // 11- If we need to Repeat the String, so we use (repeat()) function
 let fruit = "Orange";
 console.log(fruit.repeat(3));
+
+
+
+
+// Qs3. Write a JavaScript program to check whether a string is blank or not.
+let string = "abc";
+if (string == "") {
+    console.log("Strings are empty");
+} else {
+    console.log("Strings are NOT empty"); 
+}
+
+
+
+// // Qs1. Write a JavaScript program to test whether the character at the given (character) index is lower case.
+let strName = "AbDULlaH";
+let index = 5;
+
+if(strName[index] == strName[index].toLowerCase()){
+    console.log("index is lowerCase");
+}
+else{
+    console.log("Not a lowerCase");
+}
+
+
+
+// Qs5. Write a JavaScript program to strip leading and trailing spaces from a string
+let myName = "  My     name   is                   Abdullah";
+console.log(`Original String = ${myName}`);
+console.log(`Without Spacing String = ${myName.trim()}`);
