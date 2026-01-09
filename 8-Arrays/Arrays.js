@@ -95,24 +95,14 @@ let Math = 90;
 console.log(Array.of(phy,Eng,Math));
 
 
-
-
-
-// // Array slice Methods;
-// months.slice(2); // ['march', 'august']
-// months.slice(1, 3); // ['july', 'march']
-// months.slice(-1); // ['august']
-
-
-
 // PRACTICE QUESTIONS:
 // Qs1. Write a JavaScript program to get the first n elements of an array. 
 // [n can be any positive number].
 // For example: for array [7, 9, 0, -2] and n=3
 // Print, [7, 9, 0]
 
-// let arr = [7, 9, 0, -2,];
-// arr.slice(4);
+let q1 = [7, 9, 0, -2,];
+q1.slice(4);
 
 
 
@@ -121,49 +111,49 @@ console.log(Array.of(phy,Eng,Math));
 // // For example: for array [7, 9, 0, -2] and n=3
 // // Print, [9, 0, -2]
 
-// let arr = [7, 9, 0, -2];
-// console.log(arr.slice(-3));
+let q2 = [7, 9, 0, -2];
+console.log(q2.slice(-3));
 
 
 
 // Qs3. Write a JavaScript program to check whether a string is blank or not.
-// let string = "abc";
-// if (string == "") {
-//     console.log("Strings are empty");
-// } else {
-//     console.log("Strings are NOT empty"); 
-// }
+let string = "abc";
+if (string == "") {
+    console.log("Strings are empty");
+} else {
+    console.log("Strings are NOT empty"); 
+}
 
 
 
 // // Qs4. Write a JavaScript program to test whether the character at the given (character) index is lower case.
-// let str = "AbDULlaH";
-// let index = 5;
+let strName = "AbDULlaH";
+let index = 5;
 
-// if(str[index] == str[index].toLowerCase()){
-//     console.log("index is lowerCase");
-// }
-// else{
-//     console.log("Not a lowerCase");
-// }
+if(strName[index] == strName[index].toLowerCase()){
+    console.log("index is lowerCase");
+}
+else{
+    console.log("Not a lowerCase");
+}
 
 
 
 // Qs5. Write a JavaScript program to strip leading and trailing spaces from a string
-// let str = prompt("Enter anything");
-// console.log(`Original String = ${str}`);
-// console.log(`Without Spacing String = ${str.trim()}`);
+let myName = "  My     name   is                   Abdullah";
+console.log(`Original String = ${myName}`);
+console.log(`Without Spacing String = ${myName.trim()}`);
 
 
 
 // // Qs6. Write a JavaScript program to check if an element exists in an array or not
-// let animals = ['cat', 'dog', 'bear', 'tiger']
-// let element = 'bear'
+let animals = ['cat', 'dog', 'bear', 'tiger']
+let element = 'bear'
 
-// if(animals.indexOf(element) != -1){
-//     console.log("Element Exists");
-// }
-// else{
-//     console.log("Not Exists");
+if(animals.indexOf(element) != -1){
+    console.log("Element Exists");
+}
+else{
+    console.log("Not Exists");
 
-// }
+}
