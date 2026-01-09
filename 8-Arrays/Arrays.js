@@ -77,6 +77,10 @@ const real_nums = digits.flat(Infinity);
 console.log(real_nums);
 
 
+// If we need to reverse the elements in array we use (reverse()) Method
+let months = ['august', 'march', 'july', 'january']
+console.log(months.reverse());
+
 
 // If we need to convert Strings or Integers in to Arrays we use some Arrays functions that are given below:
 // 1- Covert just single element to Array
@@ -92,10 +96,6 @@ console.log(Array.of(phy,Eng,Math));
 
 
 
-// // Array reverse Method;
-// months.reverse(); // to reverse the all elements in array.
-// // ['august', 'march', 'july', 'january']
-// months.reverse();
 
 
 // // Array slice Methods;
