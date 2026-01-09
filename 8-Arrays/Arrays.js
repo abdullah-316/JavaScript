@@ -114,7 +114,7 @@ let q2 = [7, 9, 0, -2];
 console.log(q2.slice(-3));
 
 
-// // Qs6. Write a JavaScript program to check if an element exists in an array or not
+// // Qs3. Write a JavaScript program to check if an element exists in an array or not
 let animals = ['cat', 'dog', 'bear', 'tiger']
 let element = 'bear'
 
