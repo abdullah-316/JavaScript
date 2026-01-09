@@ -86,6 +86,6 @@ else{
 
 
 // Qs3. Write a JavaScript program to strip leading and trailing spaces from a string
-let myName = "  My     name   is                   Abdullah";
+let myName = "         My     name   is                   OTC";
 console.log(`Original String = ${myName}`);
-console.log(`Without Spacing String = ${myName.trim()}`);
+console.log(`Without Spacing String = ${myName.replace(/\s+/g, ' ').trim()}`);
