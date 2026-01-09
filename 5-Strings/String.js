@@ -63,7 +63,7 @@ console.log(fruit.repeat(3));
 
 
 // PRACTICE QUESTIONS:
-// Qs3. Write a JavaScript program to check whether a string is blank or not.
+// Qs1. Write a JavaScript program to check whether a string is blank or not.
 let string = "abc";
 if (string == "") {
     console.log("Strings are empty");
@@ -73,7 +73,7 @@ if (string == "") {
 
 
 
-// // Qs1. Write a JavaScript program to test whether the character at the given (character) index is lower case.
+// // Qs2. Write a JavaScript program to test whether the character at the given (character) index is lower case.
 let strName = "AbDULlaH";
 let index = 5;
 
@@ -85,7 +85,7 @@ else{
 }
 
 
-// Qs5. Write a JavaScript program to strip leading and trailing spaces from a string
+// Qs3. Write a JavaScript program to strip leading and trailing spaces from a string
 let myName = "  My     name   is                   Abdullah";
 console.log(`Original String = ${myName}`);
 console.log(`Without Spacing String = ${myName.trim()}`);
