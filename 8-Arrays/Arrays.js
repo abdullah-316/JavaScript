@@ -115,37 +115,6 @@ let q2 = [7, 9, 0, -2];
 console.log(q2.slice(-3));
 
 
-
-// Qs3. Write a JavaScript program to check whether a string is blank or not.
-let string = "abc";
-if (string == "") {
-    console.log("Strings are empty");
-} else {
-    console.log("Strings are NOT empty"); 
-}
-
-
-
-// // Qs4. Write a JavaScript program to test whether the character at the given (character) index is lower case.
-let strName = "AbDULlaH";
-let index = 5;
-
-if(strName[index] == strName[index].toLowerCase()){
-    console.log("index is lowerCase");
-}
-else{
-    console.log("Not a lowerCase");
-}
-
-
-
-// Qs5. Write a JavaScript program to strip leading and trailing spaces from a string
-let myName = "  My     name   is                   Abdullah";
-console.log(`Original String = ${myName}`);
-console.log(`Without Spacing String = ${myName.trim()}`);
-
-
-
 // // Qs6. Write a JavaScript program to check if an element exists in an array or not
 let animals = ['cat', 'dog', 'bear', 'tiger']
 let element = 'bear'
