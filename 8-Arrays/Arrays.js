@@ -92,46 +92,6 @@ console.log(Array.of(phy,Eng,Math));
 
 
 
-
-
-
-
-
-
-
-// // ARRAYS CHAPTER
-// let marks = [99, 89, 77, 65, 90]
-// let names = ["Abdullah", "Fahad", "Osman"]
-// let info = ["Haroon", 786, 3.14]
-
-
-// let months = ['january', 'july', 'march', 'august']
-
-// // Array push Method;
-// months.push('may') // may has been added(pushed) at the end of the array 
-// // ['january', 'july', 'march', 'august', 'may']
-
-
-// // Array pop Method;
-// months.pop(); // may has been delete(poped) from the array because pop del the last index.
-// // ['january', 'july', 'march', 'august']
-
-
-// // Array unshift Method;
-// months.unshift('june'); // june has been added at start of the array
-// // ['june', 'january', 'july', 'march', 'august']
-
-
-// // Array shift Method;
-// months.shift(); // june has been delete or exluded at start of the array
-// // ['january', 'july', 'march', 'august']
-
-
-// // Array indexOf Method;
-// months.indexOf('march'); // check the index or place of the march
-// // e.g: output "2"
-
-
 // // Array reverse Method;
 // months.reverse(); // to reverse the all elements in array.
 // // ['august', 'march', 'july', 'january']
