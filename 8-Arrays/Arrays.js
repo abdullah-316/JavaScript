@@ -144,27 +144,6 @@ console.log(Array.of(phy,Eng,Math));
 // months.slice(-1); // ['august']
 
 
-// // Array splice Method;
-// // At first are array of months looks like:
-// // ['january', 'july', 'march', 'august']
-
-// // after using splice methods:
-// months.splice(1, 2); // ['july', 'march'] (1:index,  2: delete 1st and 2nd index)
-
-// months.splice(1, 0, "feburary", "march"); // ['january', 'feburary', 'march', 'august']
-// // (1: Start from 1st index, 0: No delete, "feburary", "march": adding feburary and march from 1 index)
-
-
-// //  Array sort method;
-// // months.sort(); // ['august', 'feburary', 'january', 'march'] sorting by default ascending order
-
-
-// let lang = ['c', 'c++', 'html', 'javaScript', 'python', 'java', 'c#', 'sql'];
-
-// let arr = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
-// let state = [['X', null, 'O'], [null, 'X', null], ['0', null, 'X']]
-
-
 
 // PRACTICE QUESTIONS:
 // Qs1. Write a JavaScript program to get the first n elements of an array. 
