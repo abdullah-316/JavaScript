@@ -9,7 +9,8 @@ else{
     
 }
 
-
+// Write a program to check if 2 numbers have the same last digit.
+// Eg : 32 and 47852 have the same last digit i.e. 2
 let n1 = 32;
 let n2 = 47852;
 
