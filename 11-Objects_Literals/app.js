@@ -1,26 +1,26 @@
 // // Object Literals Syntax
-// const student = {   // student is creating as an Object or Property.
-//     name: 'Abdullah', // name = Key and 'Abdullah' = value
-//     age: 24,
-//     marks: 96.5
-// };
+const student = {   // student is creating as an Object or Property.
+    name: 'Abdullah', // name = Key and 'Abdullah' = value
+    age: 24,
+    marks: 96.5
+};
 
 // // We can also create an array in object.
-// const items = {
-//     price: 99.99,
-//     discount: 5,
-//     color: ['red', 'green']
-// };
+const items = {
+    price: 99.99,
+    discount: 5,
+    color: ['red', 'green']
+};
 
 
 // // Create a X post:
-// const post = {
-//     username: "@elon.musk",
-//     content: "NASA and Tesla",
-//     likes: 1000,
-//     repost: 100,
-//     tags: ['@nasa', '@tesla']
-// };
+const post = {
+    username: "@elon.musk",
+    content: "NASA and Tesla",
+    likes: 1000,
+    repost: 100,
+    tags: ['@nasa', '@tesla']
+};
 
 
 
@@ -42,29 +42,6 @@ const classInfo = {
         marks: 92
     },
 };
-
-
-
-// Array of Objects:
-const studentInfo = [
-    {
-        name: 'Ali',
-        age: 22,
-        marks: 90
-    },
-
-    {
-        name: 'Usman',
-        age: 23,
-        marks: 92
-    },
-
-    {
-        name: 'Hamza',
-        age: 25,
-        marks: 94
-    },
-];
 
 
 // Random Integer:
