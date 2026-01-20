@@ -10,19 +10,19 @@ function fun() {
     let a = 40;
 }
 
-// console.log(a);
-// console.log(b);
+console.log(a);
+console.log(b);
 
 
 // 2- Block Scope: accessiable Inside the function
-let x = 10;
+let x = 50;
 
 if (true) {
     let x = 20;
-    // console.log("INNER:", x);
+    console.log("INNER:", x);
 }
 
-// console.log(x);
+console.log(x);
 
 
 
