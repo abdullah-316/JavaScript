@@ -17,12 +17,14 @@ const myUser = {
 console.log(myUser["full name"]);
 
 
+
 // Interview question: how we can used Symbol(data type) in objects
 const sym = Symbol("key1");
 const mySym = {
     [sym]: "myKey1"
 }
 console.log(mySym);
+
 
 
 // If we need to change the value of the objects:
@@ -33,6 +35,7 @@ console.log(student);
 // Object.freeze(student);
 // student.marks = 98.7;
 // console.log(student);
+
 
 
 // Access objects by using function:
@@ -47,6 +50,7 @@ student.greet = function(){
     console.log(`Hi, ${student.name}`);
 }
 console.log(student.greet());
+
 
 
 // // We can also create an array in object.
@@ -65,6 +69,20 @@ const post = {
     repost: 100,
     tags: ['@nasa', '@tesla']
 };
+
+
+
+// If we need to combine two objects we used two methods:
+// 1- we assign two objects
+const obj1 = {1:"a", 2:"b"};
+const obj2 = {3:"y", 4:"z"};
+
+// const obj = Object.assign({}, obj1, obj2);
+// console.log(obj);
+
+// 2- Most commonly by using spread operator
+const obj3 = {...obj1, ...obj2};
+// console.log(obj3);
 
 
 
