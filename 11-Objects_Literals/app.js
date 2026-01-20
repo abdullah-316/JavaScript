@@ -1,7 +1,7 @@
 // 1- Template for using objects Literals:
 const student = {   // student is creating as an Object or Property.
-    name: 'Abdullah', // name = Key and 'Abdullah' = value
-    age: 24,
+    name: 'Arham', // name = Key and 'Arham' = value
+    age: 22,
     marks: 96.5
 };
 
@@ -23,6 +23,31 @@ const mySym = {
     [sym]: "myKey1"
 }
 console.log(mySym);
+
+
+// If we need to change the value of the objects:
+student.age = 24;
+console.log(student);
+
+// If we want that no one can change the object so we use:
+// Object.freeze(student);
+// student.marks = 98.7;
+// console.log(student);
+
+
+// Access objects by using function:
+student.greet = function() {
+    console.log("Hi, Students");
+}
+
+console.log(student.greet());
+
+// we can also access the keys in object:
+student.greet = function(){
+    console.log(`Hi, ${student.name}`);
+}
+console.log(student.greet());
+
 
 // // We can also create an array in object.
 const items = {
