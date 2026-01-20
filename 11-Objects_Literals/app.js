@@ -61,15 +61,6 @@ const items = {
 };
 
 
-// // Create a X post:
-const post = {
-    username: "@elon.musk",
-    content: "NASA and Tesla",
-    likes: 1000,
-    repost: 100,
-    tags: ['@nasa', '@tesla']
-};
-
 
 
 // If we need to combine two objects we used two methods:
@@ -105,4 +96,25 @@ const classInfo = {
     },
 };
 
+console.log(classInfo);
+console.log(classInfo.std2);
 
+
+// If we need to access the objects by their keys and values:
+const post = {
+    username: "@elon.musk",
+    content: "NASA and Tesla",
+    likes: 1000,
+    repost: 100,
+    tags: ['@nasa', '@tesla']
+};
+// // by accessing keys
+console.log(Object.keys(post));
+// // by accessing values
+console.log(Object.values(post));
+
+// // if we want to make single key and value in to array we used:
+console.log(Object.entries(post));
+
+// // If we need to check the object has the property or not we used:
+console.log(post.hasOwnProperty("username"));
