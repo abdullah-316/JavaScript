@@ -38,9 +38,9 @@ function one() {
     // console.log(website);
     
     // inner function called
-    // two();
+    two();
 }
-// one();
+one();
 
 
 // Same as for IF else 
@@ -48,7 +48,7 @@ if (true) {
     const username = "@ali09";
     if (true) {
         const site = "youtube";
-        // console.log(username);
+        console.log(username);
     }
     // outside the scope gave error
     // console.log(site);
