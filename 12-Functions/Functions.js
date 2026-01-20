@@ -6,7 +6,7 @@ function myFunc(params) {
 }
 
 // function/method Call here 
-// myFunc();
+myFunc();
 
 // Important if we call function without parantheses() it would call as reference eg:
 // myFunc;
@@ -17,7 +17,7 @@ function myFunc(params) {
 function adding(num1, num2) {
     console.log(num1 + num2);
 }
-// adding(10, 5) // these are call by value or passing by value
+adding(10, 5) // these are call by value or passing by value
 
 
 // Function by using return 
@@ -30,7 +30,7 @@ function multiple(number1, number2) {
     return number1 * number2;
 }
 const answer = multiple(5, 4)
-// console.log(answer);
+console.log(answer);
 
 
 
