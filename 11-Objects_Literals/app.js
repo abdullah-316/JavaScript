@@ -62,7 +62,6 @@ const items = {
 
 
 
-
 // If we need to combine two objects we used two methods:
 // 1- we assign two objects
 const obj1 = {1:"a", 2:"b"};
