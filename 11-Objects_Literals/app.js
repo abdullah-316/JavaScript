@@ -1,4 +1,4 @@
-// // Object Literals Syntax
+// 1- Template for using objects Literals:
 const student = {   // student is creating as an Object or Property.
     name: 'Abdullah', // name = Key and 'Abdullah' = value
     age: 24,
