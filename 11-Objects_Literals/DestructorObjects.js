@@ -2,7 +2,7 @@
 // Destructuring in Objects
 
 const course = {
-    courseName: "JavaScript Stack",
+    courseName: "JavaScript full Stack",
     courseInstructor: "Angela Yu",
     coursePlatform: "Udemy",
     courseFee: "$9.99"
