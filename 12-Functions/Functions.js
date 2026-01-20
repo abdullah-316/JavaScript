@@ -87,8 +87,8 @@ const array = [10, 20, 40, 50];
 function returnValue(getArray) {
     return getArray[2];
 }
-// console.log(returnValue(array));
+console.log(returnValue(array));
 
 
 // we can also write directly
-console.log(returnValue([10, 20, 50, 60]));
+// console.log(returnValue([10, 20, 50, 60]));
