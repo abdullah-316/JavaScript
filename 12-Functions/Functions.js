@@ -44,7 +44,7 @@ function loggedIn(username) {
     let msg = `${username} just logged in...`
     return msg;
 }
-// console.log(loggedIn("Ali"));
+console.log(loggedIn("Ali"));
 
 
 // function using rest(...) operator same as spread 
@@ -52,14 +52,14 @@ function loggedIn(username) {
 function cartPrice(...num) {
     return num
 }
-// console.log(cartPrice(100, 200, 300, 400));
+console.log(cartPrice(100, 200, 300, 400));
 
 
 // using more values
 function cart(val1, val2, ...num) {
     return num
 }
-// console.log(cart(100, 200, 300, 400));
+console.log(cart(100, 200, 300, 400));
 
 
 // function using objects
