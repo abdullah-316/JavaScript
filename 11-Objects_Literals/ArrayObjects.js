@@ -18,3 +18,5 @@ const studentInfo = [
         marks: 94
     },
 ];
+
+console.log(studentInfo[1].name);
