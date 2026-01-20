@@ -5,6 +5,25 @@ const student = {   // student is creating as an Object or Property.
     marks: 96.5
 };
 
+// We can access the objects by two ways 
+// 1: using with dot(.) operator
+console.log(student.name);
+
+// 2: most commonly used by brackets([]), beacuse if we want to access a key string like: 
+// "full name": "Arham khan", we can only access with bracket([])  
+const myUser = {
+    "full name": "Akmal khan"
+}
+console.log(myUser["full name"]);
+
+
+// Interview question: how we can used Symbol(data type) in objects
+const sym = Symbol("key1");
+const mySym = {
+    [sym]: "myKey1"
+}
+console.log(mySym);
+
 // // We can also create an array in object.
 const items = {
     price: 99.99,
@@ -44,5 +63,3 @@ const classInfo = {
 };
 
 
-// Random Integer:
-let random = Math.floor( Math.random() * 10 ) + 1;
