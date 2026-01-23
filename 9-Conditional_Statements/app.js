@@ -1,4 +1,3 @@
-
 // Conditional statements:
 // if, if else, if else-if else
 
@@ -15,7 +14,6 @@
 
 */
 
-
 // Logical Operators: Used with conditions
 /*
     1- AND(&&) ---> if(a == b && b == c) : true && false;  // false
@@ -24,4 +22,23 @@
 */
 
 
+// Ternary Operator: Short form of if...else.
+/*
+    condition ? value1 : value2
+                  if      else
+*/
+let age = 20;
+age >= 18 ? console.log("Adult") : console.log("Under Age");
 
+// Nullish coalescing operator in JavaScript is ??.
+// it returns the right-hand value only if the left-hand value is null or undefined.
+let username = undefined;
+console.log(username ?? "guest"); // output -> guest
+
+let value = null;
+console.log(22 ?? value);
+
+let v1 = 10;
+let v2 = 90;
+let v3 = null;
+console.log(v3 ?? v2 ?? v1);
