@@ -1,3 +1,15 @@
+// Switch Case Control Flow:
+
+/* 
+switch (key) {
+    case value:
+        
+        break;
+
+    default:
+        break;
+}
+*/
 
 let months = 2;
 
