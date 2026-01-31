@@ -2,7 +2,7 @@
 // [The number should be between 1 and 6].
 
 const random = Math.floor(Math.random() * 6) + 1;
-
+console.log(dice);
 
 
 // Qs2. Create an object representing a car that stores the following properties for the
