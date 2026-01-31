@@ -1,7 +1,7 @@
 // Qs1. Create a program that generates a random number representing a dice roll.
 // [The number should be between 1 and 6].
 
-const random = Math.floor(Math.random() * 6) + 1;
+const dice = Math.floor(Math.random() * 6) + 1;
 console.log(dice);
 
 
@@ -14,7 +14,7 @@ let car = {
     model: 2025,
     color: ['grey', 'white', 'black']
 };
-
+console.log(car.name);
 
 // Qs3. Create an object Person with their name, age and city.
 // Edit their city’s original value to change it to “New York”.
