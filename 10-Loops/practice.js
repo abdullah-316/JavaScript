@@ -58,3 +58,15 @@ for(let i=1; i<arr.length; i++){
   }
 }
 console.log("Largest element is", largest);
+
+
+// Q6. Reverse of a number 
+let value = 12345
+let rev = 0
+
+while (value > 0) {
+    let last = value % 10
+    rev = (rev * 10) + last
+    value = Math.floor(value / 10)
+}
+// console.log(`Reverse is: ${rev}`);
