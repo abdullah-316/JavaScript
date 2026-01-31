@@ -25,3 +25,8 @@ let person = {
     age: 24,
     city: 'Lahore'
 };
+
+person.city = "New York"
+person.country = "United States"
+
+console.log(person);
