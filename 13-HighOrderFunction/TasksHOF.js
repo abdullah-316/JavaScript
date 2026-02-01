@@ -14,3 +14,13 @@ function filterEvenNumbers(val) {
     return val.filter((value) => value %2 == 0)
 }
 // console.log(filterEvenNumbers(secondArr));
+
+
+
+// 3- Write a function sumPositiveNumbers(arr) that takes an array of numbers and returns the sum of all positive numbers using filter() and reduce() with arrow functions
+// const thirdArr = [1, -3, 4, -2, -8, 5]
+const thirdArr = [-1,-3,-2]
+function sumPositiveNumbers(num) {
+    return num.filter((value) => value > 0).reduce((acc, curr ) => acc + curr, 0)
+}
+// console.log(sumPositiveNumbers(thirdArr));
