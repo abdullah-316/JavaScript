@@ -24,3 +24,23 @@ function sumPositiveNumbers(num) {
     return num.filter((value) => value > 0).reduce((acc, curr ) => acc + curr, 0)
 }
 // console.log(sumPositiveNumbers(thirdArr));
+
+
+
+// 4- Write a function getNames(arr) that takes an array of objects where each object has a name property, and returns an array of just the names using map() and arrow functions
+let Persons = [
+    {
+        name: "Hadi"
+    },
+    {
+        name: "Adil"
+    },
+    {
+        name: "Ibrahim"
+    },
+]
+
+function getNames(arr) {
+    return arr.map(Persons =>  Persons.name)
+}
+// console.log(getNames(Persons));
