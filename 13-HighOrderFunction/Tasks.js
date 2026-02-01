@@ -35,10 +35,14 @@ let maxNum = function (num) {
 /* Task 4: Remove Duplicates from an Array
 Write a function removeDuplicates(arr) that returns a new array with all duplicates removed
 */
-// Rest Example
-function addEverything(...numbers) {
-    return numbers.reduce((a, b) => a + b);
+// Set gave us the unique value
+let example = [1,2,3,3,4,5,5]
+let rmFunc = function (val) {
+    return [...new Set(val)]
 }
-// console.log(addEverything(1, 5, 10, 20));
+// console.log(rmFunc(example));
 
 
+/* Task 5: Flatten a Nested Array
+Write a function flattenArray(arr) that takes a nested array and returns a single flattened array
+*/
