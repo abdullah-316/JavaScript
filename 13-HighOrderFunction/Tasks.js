@@ -43,6 +43,12 @@ let rmFunc = function (val) {
 // console.log(rmFunc(example));
 
 
+
 /* Task 5: Flatten a Nested Array
 Write a function flattenArray(arr) that takes a nested array and returns a single flattened array
 */
+let valArr = [1, [2, 3], [4, [5]]]
+function flatFunc(num) {
+    return num.flat(Infinity)
+}
+// console.log(flatFunc(valArr));
