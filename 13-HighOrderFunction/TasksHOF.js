@@ -44,3 +44,12 @@ function getNames(arr) {
     return arr.map(Persons =>  Persons.name)
 }
 // console.log(getNames(Persons));
+
+
+
+// 5- Write a function findLongestWord(arr) that takes an array of strings and returns the longest word using reduce() and an arrow function
+let myFruits = ['apple', 'banana', 'cherry']
+function findLongestWord(arr) {
+    return arr.reduce((prev, curr) => prev.length < curr.length ? curr : prev, "")
+}
+console.log(findLongestWord(myFruits));
