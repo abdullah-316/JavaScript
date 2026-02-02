@@ -1,0 +1,43 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node List</title>
+</head>
+<body style="background-color: rgb(22, 22, 22); color: white;">
+    
+</body>
+
+<script>
+    // Create Elements bu using DOM 
+    let div = document.createElement("div")
+    console.log(div);
+
+    // add class name into div
+    div.className = "main"
+    // add id into div
+    div.id = "items"
+    // now set the attribute for div
+    div.setAttribute("name", "DOM")
+    // change color of div
+    div.style.backgroundColor = "green"
+    div.style.padding = "15px"
+    // they overrite the value
+    // div.innerText = "DOM Manipulation"
+    // In this we create our own node text
+    let addText = document.createTextNode("DOM Manipulation")
+    // Now append means add the text in Node List
+    div.append(addText)
+
+    // Adding on page
+    document.body.append(div)
+
+
+
+</script>
+</html>
