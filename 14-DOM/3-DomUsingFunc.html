@@ -1,0 +1,46 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Function</title>
+  </head>
+  <body style="background-color: rgb(22, 22, 22); color: white;">
+    <ul class="language">
+      <li>JavaScript</li>
+    </ul>
+  </body>
+
+  <script>
+    function addLang(lang) {
+        let li = document.createElement('li')
+        li.innerHTML = `${lang}`
+        let addText = document.querySelector('.language')
+        addText.appendChild(li)
+    }
+    addLang("Python")
+    addLang("TypeScript")
+
+    // Optimized way using Text Node beacuse you don't need to traverse the whole tree structure
+    function addLanguage(lang) {
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(lang))
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguage("Java")
+
+    // Edit element
+    // using innerHTML
+    let nthChild = document.querySelector("li:nth-child(2)")
+    nthChild.innerHTML = "Golang"
+    
+    // using outerHTML
+    let changeLi = document.querySelector("li:last-child")
+    changeLi.outerHTML = "<li>Python</li>"
+
+    // remove element
+    let rmElement = document.querySelector("li:first-child")
+    rmElement.remove()
+  </script>
+</html>
