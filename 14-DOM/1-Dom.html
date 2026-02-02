@@ -1,0 +1,43 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Parents</title>
+</head>
+<body style="background-color: rgb(22, 22, 22); color: rgb(255, 255, 255);">
+    <h1>DOM Parents</h1>
+
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+
+    <script>
+        let parent = document.querySelector(".parent")
+        console.log(parent);
+        // console.log(parent.children[3].innerText);
+
+
+        // using for loop
+        // for (let i = 0; i < parent.children.length; i++) {
+        //     console.log(parent.children[i].innerText);
+        // }
+
+        // Different parent properties
+        const one = document.querySelector(".day")
+        // console.log(one.style.color = "orange");
+        // console.log(one.parentElement);
+        // console.log(one.nextElementSibling);
+
+        // NodeList: Child Nodes is a proper tree structure
+        console.log("NODES:", parent.childNodes);
+        
+        
+    </script>
+</body>
+</html>
