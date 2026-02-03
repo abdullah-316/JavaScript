@@ -6,7 +6,7 @@ buttons.forEach((button) => {
     console.log(button);
     button.addEventListener('click', function(e) {
         // this mean which I need to target the element
-        console.log(e.target);
+        // console.log(e.target);
         
         switch (e.target.id) {
             case "grey":
