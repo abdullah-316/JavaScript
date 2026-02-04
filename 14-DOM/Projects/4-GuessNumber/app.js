@@ -9,10 +9,12 @@ const guessLowOrHigh = document.querySelector(".lowOrHigh")
 const remaining = document.querySelector(".lastResult")
 const results = document.querySelector(".resultParas")
 
-// Create a paragraph to stored some values
+// Create a paragraph to stored results value
 let p = document.createElement("p")
+
 // create a variable where previous guesses are stored
 let prevGuesses = []
+
 // let start the guess from 1
 let numGuesses = 1
 
@@ -44,6 +46,7 @@ function checkValidation(guess) {
         alert("Please enter a Number below from 100")
     }
     else{
+        // add the values of previous guesses
         prevGuesses.push(guess)
 
         if (numGuesses >= 10) {
