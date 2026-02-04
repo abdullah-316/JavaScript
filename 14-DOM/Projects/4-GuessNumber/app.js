@@ -82,7 +82,7 @@ function cleanupGuesses(guess) {
 
 // Display Message
 function displayMessage(msg) {
-    guessLowOrHigh.innerHTML = `<span>${msg}</span>`
+    guessLowOrHigh.innerHTML = `<h2><span>${msg}</span></h2>`
 }
 
 // end the Game
