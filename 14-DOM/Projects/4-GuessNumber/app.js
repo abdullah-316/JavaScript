@@ -62,6 +62,7 @@ function checkValidation(guess) {
 function guessCheck(guess) {
     if (guess === guessRandom) {
         displayMessage(`Hurrah! you guess it Right, ${guess}`)
+        gameEnd();
     }
     else if (guess < guessRandom) {
         displayMessage(`Number is Too Low`)
@@ -86,7 +87,13 @@ function displayMessage(msg) {
 
 // end the Game
 function gameEnd() {
-    
+    userInput.value = ''
+    userInput.setAttribute('disabled', '')
+    p.classList.add('button')
+    p.innerHTML = `<button class='newGameClass'>Start New Game</button>`
+    results.appendChild(p)
+    playGame = false
+    newGame();
 }
 
 // end the Game
