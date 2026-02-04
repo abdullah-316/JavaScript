@@ -96,7 +96,17 @@ function gameEnd() {
     newGame();
 }
 
-// end the Game
+// Start the new Game
 function newGame() {
-    
+    const newGameButton = document.getElementsByClassName('newGameClass')
+    newGameButton.addEventListener('click', function() {
+        guessRandom = Math.floor(Math.random() * 100 + 1)
+        prevGuesses = []
+        numGuesses = 1
+        guessSlots.innerHTML = ''
+        userInput.removeAttribute('disabled')
+        remaining.innerHTML = `${11 - numGuesses}`
+        results.removeChild(p)
+        playGame = true
+    })
 }
