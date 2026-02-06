@@ -3,9 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Events</title>
 </head>
-<body>
-    
+<body style="background-color: #424242; color: aliceblue;">
+    <h2>Explore Images</h2>
+
+    <div>
+        <ul id="images">
+            <li><img width="200px" id="cat" src="https://images.pexels.com/photos/7470063/pexels-photo-7470063.jpeg" alt="catPic"></li>
+            <li><img width="200px" id="apples" src="https://images.pexels.com/photos/15237519/pexels-photo-15237519.jpeg" alt="fruit"></li>
+            <li><img width="200px" id="lily" src="https://images.pexels.com/photos/7817543/pexels-photo-7817543.jpeg" alt="flower"></li>
+            <li><img width="200px" id="mountain" src="https://images.pexels.com/photos/35408109/pexels-photo-35408109.jpeg" alt="travel"></li>
+            <li><a href="https://google.com" id="google" style="color: aliceblue;">Google</a></li>
+            
+        </ul>
+    </div>
 </body>
+
+
+<script>
+    // We're talking about events the first thing about events is to take a action. Wether its from user or browser. Like: Button click → click event, Form submit → submit event
+
+    
+
+    /* 1-- addEventListener: its a JS method, that attaches an event to an HTML element and runs a function when that event happens.
+    
+    Basic syntax: element.addEventListener('event', function(), Event Propagation)
+    its divided into three parts: 
+    A - Element: to apply event
+    B - Event: which event to apply: (click, submit)
+    C - Function: What task perform
+    */ 
+
+
+    /*
+    // Some Important events which we need to study or research
+       - type(click, dbclick), timestamp, defaultPrevented
+       - target, toElement, srcElement, currentTarget
+       - offsetX, offsetY, clientX, clientY, screenX, screenY
+       - altkey, ctrlkey, shiftkey, keyCode
+    */
+
+    // document.getElementById('lily').addEventListener('click', function (e) {
+    //     console.log("Flower clicked");
+        
+    // })
+
+    // Event Propagation: A process by which an event travels through the DOM tree.
+    // They have 3 phases
+
+</script>
 </html>
