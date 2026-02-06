@@ -52,5 +52,45 @@
     // Event Propagation: A process by which an event travels through the DOM tree.
     // They have 3 phases
 
+    // 1 - Event Bubbling (Bottom → Top), like: Child → Parent → Document
+
+    let cat = document.getElementById('cat')
+    let img = document.querySelector("#images")
+
+    img.addEventListener('click', function (e) {
+        console.log("Clicked inside the Ul (parent)");
+
+    })
+
+    cat.addEventListener('click', function (e) {
+        console.log("Cat Clicks (child)")
+        
+        // if we need to stop the bubbling or propagation
+        // e.stopPropagation()
+    })
+
+    // 2 - Event Capturing (Top → Bottom), start from Root(document) → Parent → Child
+
+    // let apple = document.getElementById('apples')
+    // let pic = document.querySelector("#images")
+
+    // pic.addEventListener('click', function (e) {
+    //     console.log("Clicked inside the Ul (parent)");
+        
+    // }, true)
+
+    // apple.addEventListener('click', function (e) {
+    //     console.log("Click Apples (child)")
+        
+    // }, true)
+    // true means: that event running as capturing phase
+
+
+    // element.preventDefault(): it stops the default behaviour of browser. Page doesn't reload
+    document.getElementById('google').addEventListener('click', function (e) {
+        e.preventDefault();
+        console.log("Google Clicked");
+        
+    })
 </script>
 </html>
