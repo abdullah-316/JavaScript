@@ -1,30 +1,58 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Events</title>
-</head>
-<body style="background-color: #424242; color: aliceblue;">
+  </head>
+  <body style="background-color: #424242; color: aliceblue">
     <h2>Explore Images</h2>
 
     <div>
-        <ul id="images">
-            <li><img width="200px" id="cat" src="https://images.pexels.com/photos/7470063/pexels-photo-7470063.jpeg" alt="catPic"></li>
-            <li><img width="200px" id="apples" src="https://images.pexels.com/photos/15237519/pexels-photo-15237519.jpeg" alt="fruit"></li>
-            <li><img width="200px" id="lily" src="https://images.pexels.com/photos/7817543/pexels-photo-7817543.jpeg" alt="flower"></li>
-            <li><img width="200px" id="mountain" src="https://images.pexels.com/photos/35408109/pexels-photo-35408109.jpeg" alt="travel"></li>
-            <li><a href="https://google.com" id="google" style="color: aliceblue;">Google</a></li>
-            
-        </ul>
+      <ul id="images">
+        <li>
+          <img
+            width="200px"
+            id="cat"
+            src="https://images.pexels.com/photos/7470063/pexels-photo-7470063.jpeg"
+            alt="catPic"
+          />
+        </li>
+        <li>
+          <img
+            width="200px"
+            id="apples"
+            src="https://images.pexels.com/photos/15237519/pexels-photo-15237519.jpeg"
+            alt="fruit"
+          />
+        </li>
+        <li>
+          <img
+            width="200px"
+            id="lily"
+            src="https://images.pexels.com/photos/7817543/pexels-photo-7817543.jpeg"
+            alt="flower"
+          />
+        </li>
+        <li>
+          <img
+            width="200px"
+            id="mountain"
+            src="https://images.pexels.com/photos/35408109/pexels-photo-35408109.jpeg"
+            alt="travel"
+          />
+        </li>
+        <li>
+          <a href="https://google.com" id="google" style="color: aliceblue"
+            >Google</a
+          >
+        </li>
+      </ul>
     </div>
-</body>
+  </body>
 
-
-<script>
+  <script>
     // We're talking about events the first thing about events is to take a action. Wether its from user or browser. Like: Button click → click event, Form submit → submit event
-
-    
 
     /* 1-- addEventListener: its a JS method, that attaches an event to an HTML element and runs a function when that event happens.
     
@@ -33,8 +61,7 @@
     A - Element: to apply event
     B - Event: which event to apply: (click, submit)
     C - Function: What task perform
-    */ 
-
+    */
 
     /*
     // Some Important events which we need to study or research
@@ -46,7 +73,7 @@
 
     // document.getElementById('lily').addEventListener('click', function (e) {
     //     console.log("Flower clicked");
-        
+
     // })
 
     // Event Propagation: A process by which an event travels through the DOM tree.
@@ -54,20 +81,19 @@
 
     // 1 - Event Bubbling (Bottom → Top), like: Child → Parent → Document
 
-    let cat = document.getElementById('cat')
-    let img = document.querySelector("#images")
+    let cat = document.getElementById("cat");
+    let img = document.querySelector("#images");
 
-    img.addEventListener('click', function (e) {
-        console.log("Clicked inside the Ul (parent)");
+    img.addEventListener("click", function (e) {
+      console.log("Clicked inside the Ul (parent)");
+    });
 
-    })
+    cat.addEventListener("click", function (e) {
+      console.log("Cat Clicks (child)");
 
-    cat.addEventListener('click', function (e) {
-        console.log("Cat Clicks (child)")
-        
-        // if we need to stop the bubbling or propagation
-        // e.stopPropagation()
-    })
+      // if we need to stop the bubbling or propagation
+      // e.stopPropagation()
+    });
 
     // 2 - Event Capturing (Top → Bottom), start from Root(document) → Parent → Child
 
@@ -76,21 +102,34 @@
 
     // pic.addEventListener('click', function (e) {
     //     console.log("Clicked inside the Ul (parent)");
-        
+
     // }, true)
 
     // apple.addEventListener('click', function (e) {
     //     console.log("Click Apples (child)")
-        
+
     // }, true)
     // true means: that event running as capturing phase
 
-
     // element.preventDefault(): it stops the default behaviour of browser. Page doesn't reload
-    document.getElementById('google').addEventListener('click', function (e) {
-        e.preventDefault();
-        console.log("Google Clicked");
-        
-    })
-</script>
+    document.getElementById("google").addEventListener("click", function (e) {
+      e.preventDefault();
+      console.log("Google Clicked");
+    });
+
+    // Mini Project -> Remove Images using target event
+    document.getElementById("images").addEventListener(
+      "click",
+      function (e) {
+        if (e.target.tagName === "IMG") {
+          console.log(e.target.id);
+          let removeIt = e.target.parentNode;
+          removeIt.remove();
+          // we can also write as
+          // removeIt.parentNode.removeChild(removeIt)
+        }
+      },
+      false,
+    );
+  </script>
 </html>
