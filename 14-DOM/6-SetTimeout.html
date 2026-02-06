@@ -85,6 +85,29 @@
         
     // })
 
+        const lights = ["red", "yellow", "green"]
+    let index = 0
 
+    function changeColor() {
+
+        // Reset the color
+        lights.forEach((color) => {
+            document.querySelector(`.${color}`).style.backgroundColor = "#333"
+        })
+        
+        // track the current color
+        let currentColor = lights[index]
+        document.querySelector(`.${currentColor}`).style.backgroundColor = currentColor
+        // console.log(`current light is: ${lights[index]}`)
+
+        let duration = 5000
+        if (currentColor === "yellow") {
+            duration = 2000
+    }
+     index = (index + 1) % lights.length
+
+     setTimeout(changeColor, duration)
+}
+    changeColor()
 </script>
 </html>
