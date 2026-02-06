@@ -1,62 +1,60 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SetTimeOut</title>
-        <style>
-        .lights{
-            width: 60px;
-            height: 200px;
-            border: 2px solid ;
-            margin-top: 20px;
-            padding-top: 10px;
-        }
-        .red{
-            width: 50px;
-            height: 50px;
-            border: 2px solid ;
-            border-radius: 50%;
-            margin: auto;
-        }
-        .yellow{
-            width: 50px;
-            height: 50px;
-            border: 2px solid ;
-            border-radius: 50%;
-            margin: auto;
-            margin-top: 10px;
-        }
-        .green{
-            width: 50px;
-            height: 50px;
-            border: 2px solid ;
-            border-radius: 50%;
-            margin: auto;
-            margin-top: 10px;
-        }
+    <style>
+      .lights {
+        width: 60px;
+        height: 200px;
+        border: 2px solid;
+        margin-top: 20px;
+        padding-top: 10px;
+      }
+      .red {
+        width: 50px;
+        height: 50px;
+        border: 2px solid;
+        border-radius: 50%;
+        margin: auto;
+      }
+      .yellow {
+        width: 50px;
+        height: 50px;
+        border: 2px solid;
+        border-radius: 50%;
+        margin: auto;
+        margin-top: 10px;
+      }
+      .green {
+        width: 50px;
+        height: 50px;
+        border: 2px solid;
+        border-radius: 50%;
+        margin: auto;
+        margin-top: 10px;
+      }
     </style>
-</head>
-<body style="background-color: #424242; color: aliceblue;">
+  </head>
+  <body style="background-color: #424242; color: aliceblue">
     <h1>JavaScript</h1>
     <button id="stop">Stop</button>
 
     <!-- PracQ -->
-     <div class="lights">
-        <div class="red"></div>
-        <div class="yellow"></div>
-        <div class="green"></div>
-     </div>
-    
-</body>
+    <div class="lights">
+      <div class="red"></div>
+      <div class="yellow"></div>
+      <div class="green"></div>
+    </div>
+  </body>
 
-<script>
-    
+  <script>
     // setTimeout: Basically its run a function once after a given delay
 
     let callMyName = function () {
-        console.log("Yeet!");
-    }
+      console.log("Yeet!");
+    };
 
     // callMyName is a refrence
     // setTimeout(callMyName, 2000)
@@ -66,48 +64,47 @@
     //     document.querySelector("h1").style.color = "Yellow"
     // }, 3000)
 
-
     // Now we have clearTimeout to stop the flow of setTimeout Function
     // let changeText = function () {
     //    let h1 = document.querySelector("h1")
     //    h1.innerHTML = "TypeScript"
     //    console.log(h1.textContent);
-       
+
     // }
 
-    // Create a setTimeout 
+    // Create a setTimeout
     // let changeH1 = setTimeout(changeText, 3000)
 
-    // to stop it we now use clearTimeout by using stop button 
+    // to stop it we now use clearTimeout by using stop button
     // document.querySelector('#stop').addEventListener('click', function () {
     //     clearTimeout(changeH1)
     //     console.log("Stop");
-        
+
     // })
 
-        const lights = ["red", "yellow", "green"]
-    let index = 0
+    const lights = ["red", "yellow", "green"];
+    let index = 0;
 
     function changeColor() {
+      // Reset the color
+      lights.forEach((color) => {
+        document.querySelector(`.${color}`).style.backgroundColor = "#333";
+      });
 
-        // Reset the color
-        lights.forEach((color) => {
-            document.querySelector(`.${color}`).style.backgroundColor = "#333"
-        })
-        
-        // track the current color
-        let currentColor = lights[index]
-        document.querySelector(`.${currentColor}`).style.backgroundColor = currentColor
-        // console.log(`current light is: ${lights[index]}`)
+      // track the current color
+      let currentColor = lights[index];
+      document.querySelector(`.${currentColor}`).style.backgroundColor =
+        currentColor;
+      // console.log(`current light is: ${lights[index]}`)
 
-        let duration = 5000
-        if (currentColor === "yellow") {
-            duration = 2000
+      let duration = 5000;
+      if (currentColor === "yellow") {
+        duration = 2000;
+      }
+      index = (index + 1) % lights.length;
+
+      setTimeout(changeColor, duration);
     }
-     index = (index + 1) % lights.length
-
-     setTimeout(changeColor, duration)
-}
-    changeColor()
-</script>
+    changeColor();
+  </script>
 </html>
